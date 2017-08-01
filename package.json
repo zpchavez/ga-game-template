@@ -1,0 +1,16 @@
+{
+  "name": "ga-game-template",
+  "version": "1.0.0",
+  "description": "Template for Ga game",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel ./src --watch --out-file public/app.js & nodemon server.js"
+  },
+  "dependencies": {
+    "Ga!": "git+https://github.com/kittykatattack/ga.git",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0"
+  }
+}
