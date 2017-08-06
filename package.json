@@ -17,6 +17,7 @@
     "query-string": "^4.2.3",
     "request": "^2.76.0",
     "webpack": "^1.13.3",
+    "webpack-closure-compiler": "^2.1.5",
     "webpack-dev-middleware": "^1.8.4",
     "webpack-error-notification": "^0.1.6",
     "webpack-hot-middleware": "^2.13.1"

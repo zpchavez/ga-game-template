@@ -1,8 +1,8 @@
-require('../lib/ga');
+require('../lib/ga.js');
+require('../lib/custom.js');
 const ga = window.ga;
 
 const play = () => {
-
 }
 
 var g = ga(
