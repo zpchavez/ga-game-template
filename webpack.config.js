@@ -18,12 +18,6 @@ var appEntries = [
     appFolder + '/main.js',
 ];
 
-if (environment === 'development') {
-    appEntries.push(
-        'webpack-hot-middleware/client?path=/__webpack_hmr?http://' + __HOSTNAME__ + ':' + __PORT__
-    );
-}
-
 var config = {
   devtools: [],
   entries: {
@@ -43,7 +37,6 @@ config.devtools = '#inline-source-map';
 
 if (environment === 'development') {
   config.plugins.push(
-    new Webpack.HotModuleReplacementPlugin(),
     new Webpack.NoErrorsPlugin(),
     new WebpackError(process.platform)
   );

@@ -16,14 +16,11 @@ var publicPath = webpackConfig[0].output.publicPath;
 app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: publicPath,
   contentBase: path.resolve(__dirname, 'build/' + appBase.path),
-  hot: true,
   quiet: false,
   noInfo: false,
   lazy: false,
   stats: true,
 }));
-
-app.use(require('webpack-hot-middleware')(compiler));
 
 app.use(function (req, res, next) {
   var urlPath = url.parse(req.url).pathname;
